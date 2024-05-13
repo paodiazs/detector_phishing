@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de phishing</title>
+    <style>
+        html, body {
+            font-family: Arial, sans-serif;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #161415;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 50px;
+            background-color: #DCCAA8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #161415;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #F45325;
+            color: #f3e1c7;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #f93c08;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Detector de phishing</h1>
+        <form action="/predict" method="POST">
+            <input type="text" name="url" placeholder="Ingresa una URL...">
+            <button type="submit">Detectar</button>
+        </form>
+    </div>
+</body>
+</html>
